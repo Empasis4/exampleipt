@@ -58029,23 +58029,27 @@ if (false) // removed by dead control flow
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes React and other helpers. It's a great starting point while
- * building robust, powerful web applications using React + Laravel.
- */
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sass_app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/app.scss */ "./resources/sass/app.scss");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _components_Example__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-/**
- * Next, we will create a fresh React component instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 
-__webpack_require__(/*! ./components/Routers */ "./resources/js/components/Routers.js");
+
+
+
+var rootElement = document.getElementById("app");
+if (rootElement) {
+  react_dom__WEBPACK_IMPORTED_MODULE_3__.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Example__WEBPACK_IMPORTED_MODULE_4__["default"], {}), rootElement);
+}
 
 /***/ }),
 
@@ -58100,7 +58104,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Example)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _regenerator() { /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag"; function i(r, n, o, i) { var c = n && n.prototype instanceof Generator ? n : Generator, u = Object.create(c.prototype); return _regeneratorDefine2(u, "_invoke", function (r, n, o) { var i, c, u, f = 0, p = o || [], y = !1, G = { p: 0, n: 0, v: e, a: d, f: d.bind(e, 4), d: function d(t, r) { return i = t, c = 0, u = e, G.n = r, a; } }; function d(r, n) { for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) { var o, i = p[t], d = G.p, l = i[2]; r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0)); } if (o || r > 1) return a; throw y = !0, n; } return function (o, p, l) { if (f > 1) throw TypeError("Generator is already running"); for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) { i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u); try { if (f = 2, i) { if (c || (o = "next"), t = i[o]) { if (!(t = t.call(i, u))) throw TypeError("iterator result is not an object"); if (!t.done) return t; u = t.value, c < 2 && (c = 0); } else 1 === c && (t = i["return"]) && t.call(i), c < 2 && (u = TypeError("The iterator does not provide a '" + o + "' method"), c = 1); i = e; } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break; } catch (t) { i = e, c = 1, u = t; } finally { f = 1; } } return { value: t, done: y }; }; }(r, o, i), !0), u; } var a = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} t = Object.getPrototypeOf; var c = [][n] ? t(t([][n]())) : (_regeneratorDefine2(t = {}, n, function () { return this; }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c); function f(e) { return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine2(e, o, "GeneratorFunction")), e.prototype = Object.create(u), e; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine2(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine2(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine2(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine2(u), _regeneratorDefine2(u, o, "Generator"), _regeneratorDefine2(u, n, function () { return this; }), _regeneratorDefine2(u, "toString", function () { return "[object Generator]"; }), (_regenerator = function _regenerator() { return { w: i, m: f }; })(); }
 function _regeneratorDefine2(e, r, n, t) { var i = Object.defineProperty; try { i({}, "", {}); } catch (e) { i = 0; } _regeneratorDefine2 = function _regeneratorDefine(e, r, n, t) { function o(r, n) { _regeneratorDefine2(e, r, function (e) { return this._invoke(r, n, e); }); } r ? i ? i(e, r, { value: n, enumerable: !t, configurable: !t, writable: !t }) : e[r] = n : (o("next", 0), o("throw", 1), o("return", 2)); }, _regeneratorDefine2(e, r, n, t); }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
@@ -58113,198 +58125,231 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
+
 function Example() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
     _useState2 = _slicedToArray(_useState, 2),
-    fname = _useState2[0],
-    setFirstname = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    contacts = _useState2[0],
+    setContacts = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      name: "",
+      email: "",
+      message: ""
+    }),
     _useState4 = _slicedToArray(_useState3, 2),
-    lname = _useState4[0],
-    setLastname = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-    _useState6 = _slicedToArray(_useState5, 2),
-    profiles = _useState6[0],
-    setProfiles = _useState6[1];
-  var handleSubmit = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee(e) {
-      var _t;
+    form = _useState4[0],
+    setForm = _useState4[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    fetchContacts();
+  }, []);
+  var fetchContacts = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
+      var res;
       return _regenerator().w(function (_context) {
-        while (1) switch (_context.p = _context.n) {
+        while (1) switch (_context.n) {
           case 0:
-            e.preventDefault();
-            _context.p = 1;
-            _context.n = 2;
-            return axios.post("/api/register", {
-              fname: fname,
-              lname: lname
-            });
+            _context.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/contacts");
+          case 1:
+            res = _context.v;
+            setContacts(res.data);
           case 2:
-            alert("Profile created!");
-            setFirstname("");
-            setLastname("");
-            _context.n = 4;
-            break;
-          case 3:
-            _context.p = 3;
-            _t = _context.v;
-            alert("Error creating profile.");
-          case 4:
             return _context.a(2);
         }
-      }, _callee, null, [[1, 3]]);
+      }, _callee);
     }));
-    return function handleSubmit(_x) {
+    return function fetchContacts() {
       return _ref.apply(this, arguments);
     };
   }();
-  var fetchProfiles = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2() {
-      var response, _t2;
+  var handleSubmit = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee2(e) {
       return _regenerator().w(function (_context2) {
-        while (1) switch (_context2.p = _context2.n) {
+        while (1) switch (_context2.n) {
           case 0:
-            _context2.p = 0;
+            e.preventDefault();
             _context2.n = 1;
-            return axios.get("/api/profiles");
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().post("/api/contacts", form);
           case 1:
-            response = _context2.v;
-            // Use the correct endpoint
-            setProfiles(response.data); // Set all profiles to state
-            _context2.n = 3;
-            break;
+            setForm({
+              name: "",
+              email: "",
+              message: ""
+            });
+            fetchContacts();
           case 2:
-            _context2.p = 2;
-            _t2 = _context2.v;
-            console.error("Error fetching profiles:", _t2);
-          case 3:
             return _context2.a(2);
         }
-      }, _callee2, null, [[0, 2]]);
+      }, _callee2);
     }));
-    return function fetchProfiles() {
+    return function handleSubmit(_x) {
       return _ref2.apply(this, arguments);
     };
   }();
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetchProfiles();
-  }, []);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    className: "home",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-        onSubmit: handleSubmit,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "text",
-          placeholder: "Firstname",
-          value: fname,
-          onChange: function onChange(e) {
-            return setFirstname(e.target.value);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "text",
-          placeholder: "Lastname",
-          value: lname,
-          onChange: function onChange(e) {
-            return setLastname(e.target.value);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "submit"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("table", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("thead", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("tr", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("th", {
-              children: "Firstname"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("th", {
-              children: "Lastname"
+  var handleDelete = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(id) {
+      return _regenerator().w(function (_context3) {
+        while (1) switch (_context3.n) {
+          case 0:
+            _context3.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default()["delete"]("/api/contacts/".concat(id));
+          case 1:
+            fetchContacts();
+          case 2:
+            return _context3.a(2);
+        }
+      }, _callee3);
+    }));
+    return function handleDelete(_x2) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var handleUpdate = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee4(id) {
+      var updatedContact;
+      return _regenerator().w(function (_context4) {
+        while (1) switch (_context4.n) {
+          case 0:
+            updatedContact = _objectSpread(_objectSpread({}, form), {}, {
+              id: id
+            });
+            _context4.n = 1;
+            return axios__WEBPACK_IMPORTED_MODULE_1___default().put("/api/contacts/".concat(id), updatedContact);
+          case 1:
+            setForm({
+              name: "",
+              email: "",
+              message: ""
+            });
+            fetchContacts();
+          case 2:
+            return _context4.a(2);
+        }
+      }, _callee4);
+    }));
+    return function handleUpdate(_x3) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "min-h-screen flex items-center justify-center bg-gray-100",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "w-full max-w-md bg-white shadow-2xl rounded-lg p-10",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+        className: "text-3xl font-bold text-gray-800 text-center mb-8",
+        children: "Contact Us"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "mb-10",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+          onSubmit: handleSubmit,
+          className: "grid grid-cols-1 gap-6",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            type: "text",
+            placeholder: "Full Name",
+            value: form.name,
+            onChange: function onChange(e) {
+              return setForm(_objectSpread(_objectSpread({}, form), {}, {
+                name: e.target.value
+              }));
+            },
+            className: "border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500",
+            required: true
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+            type: "email",
+            placeholder: "Email Address",
+            value: form.email,
+            onChange: function onChange(e) {
+              return setForm(_objectSpread(_objectSpread({}, form), {}, {
+                email: e.target.value
+              }));
+            },
+            className: "border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500",
+            required: true
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
+            placeholder: "Message",
+            value: form.message,
+            onChange: function onChange(e) {
+              return setForm(_objectSpread(_objectSpread({}, form), {}, {
+                message: e.target.value
+              }));
+            },
+            className: "border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500",
+            rows: "3",
+            required: true
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            type: "submit",
+            className: "bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md",
+            children: "Submit"
+          })]
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+          className: "text-xl font-semibold mb-4 text-gray-700 text-center",
+          children: "Saved Contacts"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "overflow-x-auto",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("table", {
+            className: "min-w-full border border-gray-200 text-sm rounded-lg overflow-hidden shadow-sm",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("thead", {
+              className: "bg-gray-200 text-gray-700",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                  className: "px-4 py-3 border text-left",
+                  children: "Name"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                  className: "px-4 py-3 border text-left",
+                  children: "Email"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                  className: "px-4 py-3 border text-left w-1/2",
+                  children: "Message"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("th", {
+                  className: "px-4 py-3 border text-center",
+                  children: "Actions"
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tbody", {
+              children: contacts.length === 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("tr", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                  colSpan: "4",
+                  className: "px-4 py-6 text-center text-gray-500",
+                  children: "No contacts available."
+                })
+              }) : contacts.map(function (c) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("tr", {
+                  className: "hover:bg-gray-50 transition",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                    className: "px-4 py-3 border",
+                    children: c.name
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                    className: "px-4 py-3 border",
+                    children: c.email
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("td", {
+                    className: "px-4 py-3 border align-top",
+                    children: c.message
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("td", {
+                    className: "px-4 py-3 border text-center",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                      onClick: function onClick() {
+                        return handleDelete(c.id);
+                      },
+                      className: "bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-xs",
+                      children: "Delete"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                      onClick: function onClick() {
+                        return handleUpdate(c.id);
+                      },
+                      className: "bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded text-xs ml-2",
+                      children: "Edit"
+                    })]
+                  })]
+                }, c.id);
+              })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("tbody", {
-          children: profiles.map(function (profile) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("tr", {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("td", {
-                children: profile.fname
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("td", {
-                children: profile.lname
-              })]
-            }, profile.id);
-          })
         })]
       })]
     })
   });
-}
-
-/***/ }),
-
-/***/ "./resources/js/components/Home.js":
-/*!*****************************************!*\
-  !*** ./resources/js/components/Home.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Home)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    id: "homepage",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-      children: "yawa"
-    })
-  });
-}
-
-/***/ }),
-
-/***/ "./resources/js/components/Routers.js":
-/*!********************************************!*\
-  !*** ./resources/js/components/Routers.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Routers)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _Example__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Example */ "./resources/js/components/Example.js");
-/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Home */ "./resources/js/components/Home.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-
-function Routers() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-        path: "/",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Example__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'react-router-dom'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-        path: "/home",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Home__WEBPACK_IMPORTED_MODULE_4__["default"], {})
-      })]
-    })
-  });
-}
-if (document.getElementById("root")) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Routers, {}), document.getElementById("root"));
 }
 
 /***/ }),
@@ -58313,9 +58358,12 @@ if (document.getElementById("root")) {
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: @use rules must be written before any other rules.\n  ╷\n8 │ @use 'variables';\r\n  │ ^^^^^^^^^^^^^^^^\n  ╵\n  resources\\sass\\home.scss 8:1  @import\n  resources\\sass\\app.scss 10:9  root stylesheet\n    at processResult (C:\\empasis-exampleapp\\example-app\\node_modules\\webpack\\lib\\NormalModule.js:926:19)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\webpack\\lib\\NormalModule.js:1075:5\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\loader-runner\\lib\\LoaderRunner.js:400:11\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\loader-runner\\lib\\LoaderRunner.js:252:18\n    at context.callback (C:\\empasis-exampleapp\\example-app\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\sass-loader\\dist\\index.js:54:7\n    at Function.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:127546:16)\n    at render_closure1.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:108659:12)\n    at _RootZone.runBinary$3$3 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:39647:18)\n    at _FutureListener.handleError$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38178:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38479:49)\n    at Object._Future__propagateToListeners (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:5172:77)\n    at _Future._completeErrorObject$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38339:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37949:12)\n    at Object._asyncRethrow (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4935:17)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:28511:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4960:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37968:12)\n    at _awaitOnObject_closure0.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37962:25)\n    at _RootZone.runBinary$3$3 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:39647:18)\n    at _FutureListener.handleError$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38178:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38479:49)\n    at Object._Future__propagateToListeners (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:5172:77)\n    at _Future._completeErrorObject$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38339:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37949:12)\n    at Object._asyncRethrow (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4935:17)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:20598:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4960:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37968:12)\n    at _awaitOnObject_closure0.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37962:25)\n    at _RootZone.runBinary$3$3 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:39647:18)\n    at _FutureListener.handleError$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38178:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38479:49)\n    at Object._Future__propagateToListeners (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:5172:77)\n    at _Future._completeErrorObject$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38339:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37949:12)\n    at Object._asyncRethrow (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4935:17)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:20646:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4960:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37968:12)\n    at _awaitOnObject_closure0.call$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37962:25)\n    at _RootZone.runBinary$3$3 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:39647:18)\n    at _FutureListener.handleError$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38178:21)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38479:49)\n    at Object._Future__propagateToListeners (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:5172:77)\n    at _Future._completeErrorObject$1 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:38339:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:37949:12)\n    at Object._asyncRethrow (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4935:17)\n    at C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:86336:24\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\empasis-exampleapp\\example-app\\node_modules\\sass\\sass.dart.js:4960:15)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -58348,7 +58396,54 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -58398,13 +58493,68 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"/js/app": 0,
+/******/ 			"css/app": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./resources/js/app.js");
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./resources/sass/app.scss");
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;

@@ -1,6 +1,9 @@
 <?php
 
-use App\Http\Controllers\BusinessController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
-Route::post('/businesses', [BusinessController::class, 'store']);
-Route::get('/businesses', [BusinessController::class, 'index']);
+Route::get('/contacts', [ContactController::class, 'index']);   // GET all
+Route::post('/contacts', [ContactController::class, 'store']);  // POST create
+Route::put('/contacts/{id}', [ContactController::class, 'update']); // PUT update
+Route::delete('/contacts/{id}', [ContactController::class, 'destroy']); // DELETE
