@@ -1,0 +1,531 @@
+/* Styles for the login page to match the provided design */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 420px;
+}
+
+.login-brand {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.login-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 9999px;
+  border: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Remove default body padding on login page */
+body.login-body {
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+select {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+button {
+  padding: 8px 12px;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #000;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.card-muted {
+  background: #f3f4f6;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: #f8fafc;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+/* Pills */
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+}
+
+.pill--active {
+  background: #dcfce7;
+  color: #065f46;
+}
+
+.pill--inactive {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Tabs */
+.tabs {
+  display: inline-flex;
+  gap: 4px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+  border-radius: 9999px;
+}
+
+.tabs button {
+  background: transparent;
+  color: #111827;
+}
+
+.tabs .is-active {
+  background: #fff;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  width: min(640px, 92vw);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Login page */
+.login-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header {
+  width: 100%;
+  padding: 32px 0 8px;
+  text-align: center;
+}
+
+.login-header__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.login-title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+}
+
+.login-title:hover {
+  text-decoration: underline;
+}
+
+.login-subtitle {
+  font-size: 12px;
+  color: #9CA3AF;
+  margin-top: 4px;
+}
+
+.login-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px 48px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+}
+
+.login-card__body {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.login-card__title {
+  text-align: center;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 4px;
+}
+
+.login-card__subtitle {
+  text-align: center;
+  font-size: 12px;
+  color: #9CA3AF;
+  margin: 0 0 24px;
+}
+
+.login-error {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #B91C1C;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.login-input__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px 10px 40px;
+  border-radius: 9999px;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  font-size: 14px;
+  color: #111827;
+}
+
+.login-input::-moz-placeholder {
+  color: #9CA3AF;
+}
+
+.login-input::placeholder {
+  color: #9CA3AF;
+}
+
+.login-button {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ===== App Layout Theme ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #f3f4f6;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+.sidebar__brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.brand__icon {
+  background: #111827;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand__title {
+  font-weight: 700;
+  color: #111827;
+  font-size: 14px;
+}
+
+.brand__subtitle {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.sidebar__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav__link {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 9999px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background: #e5e7eb;
+}
+
+/* Topbar */
+.topbar {
+  height: 52px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.topbar__left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn--ghost {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.btn--ghost:hover {
+  filter: brightness(0.95);
+}
+
+/* Cards grid */
+.page-title {
+  margin: 16px 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.stat-card {
+  background: #eeeeef;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.stat-card__title {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.stat-card__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Panels and table */
+.panel {
+  margin-top: 16px;
+}
+
+.panel__title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.table-panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  height: 320px;
+  overflow: auto;
+  background: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  background: #f8fafc;
+}
+
+.table th, .table td {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+}
